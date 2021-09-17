@@ -1,0 +1,54 @@
+
+rpm-ostree install git xrandr make gcc g++ meson gnome-tweaks util-linux-user rust cargo zsh
+
+Preparing zsh shell...
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+follow the instructions here :p https://github.com/sindresorhus/pure#manually
+
+My personal wallpaper pack :)
+git clone https://github.com/ArtfulAardvark/wallpapers/
+mv ~/wallpapers ~/Pictures
+
+installling a cursor theme
+wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v1.1.2/Bibata-Original-Ice.tar.gz
+unzip Bibata-Original-Ice
+mkdir ~/.icons
+mv Bibata-Original-Ice ~/.icons
+Now set it up on Tweaks
+
+mkdir ~/Git
+mkdir ~/Devel
+
+echo Make sure curl is installed (at least on Silverblue its already installed)
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub ca.desrt.dconf-editor
+flatpak install com.gexperts.Tilix
+flatpak uninstall org.gnome.gedit org.gnome.Maps org.gnome.Weather
+flatpak uninstall org.gnome.Contacts
+flatpak install info.febvre.Komikku
+flatpak install org.chromium.Chromium
+flatpak install io.github.celluloid_player.Celluloid
+flatpak install org.gnome.Lollypop
+flatpak install org.gnome.Boxes
+flatpak install com.valvesoftware.Steam
+flatpak install org.gnu.emacs
+flatpak install com.obsproject.Studio
+flatpak install org.inkscape.Inkscape
+
+cd Music
+mkdir -p Gorillaz-Indie VOCALOID-JPOP
+ls VOCALOID-JPOP
+youtube-dl https://www.youtube.com/watch\?v\=RbVH-nvFGuk
+youtube-dl https://www.youtube.com/watch\?v\=ZB75e7vzX0I
+youtube-dl https://youtu.be/HOz-9FzIDf0
+youtube-dl https://youtu.be/cQKGUgOfD8U
+youtube-dl https://youtu.be/qnX2CdOBcDI
+youtube-dl https://youtu.be/kuNixp-wvWM
+youtube-dl https://youtu.be/ScSW9C3DF18
+youtube-dl https://youtu.be/NIqm73xsias
